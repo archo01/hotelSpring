@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="chamber-context.xml" />
+    <import resource="restorant-context.xml" />
+    <import resource="spa-context.xml" />
+
+        <bean id="check_01" class="arc.oop.model.bill.Bill">
+            <property name="chamber" ref="ch_01" />
+            <property name="restorant" ref="lanc_01" />
+            <property name="spa" ref="spa_01" />
+        </bean>
+
+
+</beans>
