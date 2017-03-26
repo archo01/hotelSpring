@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+        <import resource="spa-context.xml"/>
+
+        <bean id="dao_spa" class="arc.oop.dao.spa.impls.DaoSpaImpl">
+            <constructor-arg>
+                <list>
+                    <ref bean="spa_01"/>
+                    <ref bean="spa_02"/>
+                    <ref bean="spa_03"/>
+                    <ref bean="spa_04"/>
+                    <ref bean="spa_05"/>
+                </list>
+            </constructor-arg>
+        </bean>
+</beans>

@@ -3,9 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-       <import resource="bills-manage-context.xml" />
-       <import resource="services-chamber-context.xml"/>
-
-
-
+    <import resource="dao-restorant-context.xml" />
+    <bean id="services_rest" class="Se">
+        <constructor-arg>
+            <ref bean="dao_rest"></ref>
+        </constructor-arg>
+    </bean>
 </beans>

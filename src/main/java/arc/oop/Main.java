@@ -6,6 +6,7 @@ import arc.oop.dao.chamber.impls.DaoChamberImpl;
 import arc.oop.dao.chamber.interfaces.IDaoChamber;
 import arc.oop.model.BillsManager;
 import arc.oop.model.chamber.Chamber;
+import arc.oop.service.chamber.interfaces.IChamberService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -57,7 +58,7 @@ public class Main {
 //        System.out.println("----");
 //        chamberImpls.showAll();
 
-        IDaoChamber daoChamber = (DaoChamberImpl) mySpringContext.getBean("dao_ch");
+        IChamberService daoChamber = (IChamberService) mySpringContext.getBean("dao_ch");
         daoChamber.showAll();
         Chamber chamber02 = daoChamber.getChamber(1);
         chamber02.setId(8);

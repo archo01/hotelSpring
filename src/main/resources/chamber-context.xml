@@ -44,15 +44,5 @@
         <property name="jacusi" value="true" />
     </bean>
 
-    <bean id="dao_ch" class="arc.oop.dao.chamber.impls.DaoChamberImpl">
-        <constructor-arg>
-            <list>
-                <ref bean="ch_01"/>
-                <ref bean="ch_02"/>
-                <ref bean="ch_03"/>
-                <ref bean="ch_04"/>
-                <ref bean="ch_05"/>
-            </list>
-        </constructor-arg>
-    </bean>
+
 </beans>

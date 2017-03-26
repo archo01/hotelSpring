@@ -9,6 +9,10 @@
           <file>file://$MODULE_DIR$/src/main/resources/restorant-context.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spa-context.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/dao-bill-context.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/dao-chamber-context.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/dao-restorant-context.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/dao-spa-context.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/chamber-services-context.xml</file>
         </fileset>
       </configuration>
     </facet>
