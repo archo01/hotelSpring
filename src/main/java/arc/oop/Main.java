@@ -1,10 +1,16 @@
 package arc.oop;
 
+import arc.oop.dao.bill.impl.DaoBillImpl;
+import arc.oop.dao.bill.interfaces.IDaoBill;
 import arc.oop.dao.chamber.impls.DaoChamberImpl;
+import arc.oop.dao.chamber.interfaces.IDaoChamber;
 import arc.oop.model.BillsManager;
 import arc.oop.model.chamber.Chamber;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by initium on 20.03.17.
@@ -26,25 +32,54 @@ public class Main {
 
 
 
-        DaoChamberImpl chamberImpls = new DaoChamberImpl();
+//        DaoChamberImpl chamberImpls = new DaoChamberImpl();
+//
+//        System.out.println("----");
+//        System.out.println("----");
+//        System.out.println("----");
+//
+//
+//        chamberImpls.showAll();
+//        System.out.println("----");
+//
+//        Chamber testChamber = chamberImpls.getChamber(2);
+//        System.out.println(testChamber.isJacusi());
+//        testChamber.setJacusi(true);
+//        System.out.println(testChamber.isJacusi());
+//        chamberImpls.showAll();
+//        System.out.println("----");
+//        chamberImpls.updateChamber(testChamber);
+//        System.out.println("----");
+//        chamberImpls.showAll();
+//        testChamber.setId(7);
+//        System.out.println("----");
+//        chamberImpls.createChamber(testChamber);
+//        System.out.println("----");
+//        chamberImpls.showAll();
 
-        System.out.println("----");
-        System.out.println("----");
-        System.out.println("----");
+        IDaoChamber daoChamber = (DaoChamberImpl) mySpringContext.getBean("dao_ch");
+        daoChamber.showAll();
+        Chamber chamber02 = daoChamber.getChamber(1);
+        chamber02.setId(8);
+        daoChamber.updateChamber(chamber02);
+        System.out.println("----------------------");
+        daoChamber.showAll();
+        System.out.println("----------------------");
+        daoChamber.deleteChamber(2);
+        System.out.println("----------------------");
+        daoChamber.showAll();
+        ApplicationContext mySpringContextToo = new ClassPathXmlApplicationContext("dao-bill-context.xml");
+
+        IDaoBill daoBill = (DaoBillImpl) mySpringContextToo.getBean("dao_bill");
+        daoBill.showAll();
 
 
-        chamberImpls.showAll();
-        System.out.println("----");
 
-        Chamber testChamber = chamberImpls.getChamber(2);
-        System.out.println(testChamber.isJacusi());
-        testChamber.setJacusi(true);
-        System.out.println(testChamber.isJacusi());
-        chamberImpls.showAll();
-        System.out.println("----");
-        chamberImpls.updateChamber(testChamber);
-        System.out.println("----");
-        chamberImpls.showAll();
+
+
+
+
+
 
 
     }

@@ -4,11 +4,21 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-        <bean id="lanc_01" class="arc.oop.model.restorant.Restorant">
+        <bean id="lanc_01" class="arc.oop.model.restorant.Restaurant">
             <property name="id" value="1" />
             <property name="food" value="breakfest" />
             <property name="price" value="150" />
         </bean>
+
+        <bean id="lanc_02" class="arc.oop.model.restorant.Restaurant">
+            <property name="id" value="2" />
+            <property name="food" value="breakfest" />
+            <property name="price" value="150" />
+        </bean>
+
+
+
+
 
 
 </beans>

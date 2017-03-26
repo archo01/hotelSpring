@@ -34,6 +34,15 @@ public class Spa {
         this.type = type;
     }
 
+    @Override
+    public String toString() {
+        return "Spa{" +
+                "id=" + id +
+                ", type='" + type + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
     public int getPrice() {
         return price;
     }

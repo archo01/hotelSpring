@@ -12,5 +12,47 @@
         <property name="jacusi" value="true" />
     </bean>
 
+    <bean id="ch_02" class="arc.oop.model.chamber.Chamber">
+        <property name="id" value="2" />
+        <property name="bar" value="true"/>
+        <property name="conditioner" value="true" />
+        <property name="fridge" value="true" />
+        <property name="jacusi" value="true" />
+    </bean>
 
+    <bean id="ch_03" class="arc.oop.model.chamber.Chamber">
+        <property name="id" value="3" />
+        <property name="bar" value="true"/>
+        <property name="conditioner" value="true" />
+        <property name="fridge" value="true" />
+        <property name="jacusi" value="true" />
+    </bean>
+
+    <bean id="ch_04" class="arc.oop.model.chamber.Chamber">
+        <property name="id" value="4" />
+        <property name="bar" value="true"/>
+        <property name="conditioner" value="true" />
+        <property name="fridge" value="true" />
+        <property name="jacusi" value="true" />
+    </bean>
+
+    <bean id="ch_05" class="arc.oop.model.chamber.Chamber">
+        <property name="id" value="5" />
+        <property name="bar" value="true"/>
+        <property name="conditioner" value="true" />
+        <property name="fridge" value="true" />
+        <property name="jacusi" value="true" />
+    </bean>
+
+    <bean id="dao_ch" class="arc.oop.dao.chamber.impls.DaoChamberImpl">
+        <constructor-arg>
+            <list>
+                <ref bean="ch_01"/>
+                <ref bean="ch_02"/>
+                <ref bean="ch_03"/>
+                <ref bean="ch_04"/>
+                <ref bean="ch_05"/>
+            </list>
+        </constructor-arg>
+    </bean>
 </beans>

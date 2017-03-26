@@ -9,4 +9,30 @@
         <property name="price" value="150" />
         <property name="type" value="Русская Баня" />
     </bean>
+
+    <bean id="spa_02" class="arc.oop.model.spa.Spa">
+        <property name="id" value="2" />
+        <property name="price" value="150" />
+        <property name="type" value="Русская Баня" />
+    </bean>
+
+    <bean id="spa_03" class="arc.oop.model.spa.Spa">
+        <property name="id" value="3" />
+        <property name="price" value="150" />
+        <property name="type" value="Русская Баня" />
+    </bean>
+
+    <bean id="spa_04" class="arc.oop.model.spa.Spa">
+        <property name="id" value="4" />
+        <property name="price" value="150" />
+        <property name="type" value="Русская Баня" />
+    </bean>
+
+    <bean id="spa_05" class="arc.oop.model.spa.Spa">
+        <property name="id" value="5" />
+        <property name="price" value="150" />
+        <property name="type" value="Русская Баня" />
+    </bean>
+
+
 </beans>

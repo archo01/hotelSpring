@@ -3,7 +3,7 @@ package arc.oop.model.restorant;
 /**
  * Created by initium on 20.03.17.
  */
-public class Restorant {
+public class Restaurant {
     int id;
     String food;
     int price;
@@ -32,14 +32,24 @@ public class Restorant {
         this.price = price;
     }
 
-    public Restorant() {
+    public Restaurant() {
 
     }
 
-    public Restorant(int id, String food, int price) {
+    @Override
+    public String toString() {
+        return "Restaurant{" +
+                "id=" + id +
+                ", food='" + food + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
+    public Restaurant(int id, String food, int price) {
 
         this.id = id;
         this.food = food;
         this.price = price;
+
     }
 }

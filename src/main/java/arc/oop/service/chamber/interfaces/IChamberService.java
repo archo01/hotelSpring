@@ -1,13 +1,13 @@
-package arc.oop.dao.chamber.interfaces;
+package arc.oop.service.chamber.interfaces;
 
 import arc.oop.model.chamber.Chamber;
 
 import java.util.List;
 
 /**
- * Created by initium on 23.03.17.
+ * Created by initium on 24.03.17.
  */
-public interface IDaoChamber {
+public interface IChamberService {
     List<Chamber> getAll();
     Chamber getChamber(int id);
     void createChamber(Chamber chamber);
@@ -15,4 +15,5 @@ public interface IDaoChamber {
     void deleteChamber(int id);
     void showAll();
 
+    int getAmountOfAllBills();
 }
