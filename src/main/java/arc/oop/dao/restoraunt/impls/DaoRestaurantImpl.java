@@ -48,7 +48,7 @@ public class DaoRestaurantImpl implements IDaoRestaurant {
     }
 
     public void createRestaurant(Restaurant restaurant) {
-
+        restaurants.add(restaurant);
     }
 
     public void updateRestaurant(Restaurant restaurant) {

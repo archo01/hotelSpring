@@ -56,7 +56,7 @@ public class DaoBillImpl implements IDaoBill{
 
     @Override
     public void createBill(Bill bill) {
-
+        bills.add(bill);
     }
 
     @Override

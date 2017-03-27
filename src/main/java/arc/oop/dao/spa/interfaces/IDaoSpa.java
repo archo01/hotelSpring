@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by initium on 23.03.17.
  */
-public interface ISpaChamber {
+public interface IDaoSpa {
     List<Spa> getAll();
     Spa getSpa(int id);
     void createSpa(Spa spa);

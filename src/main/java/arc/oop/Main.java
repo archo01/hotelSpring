@@ -4,8 +4,11 @@ import arc.oop.dao.bill.impl.DaoBillImpl;
 import arc.oop.dao.bill.interfaces.IDaoBill;
 import arc.oop.dao.chamber.impls.DaoChamberImpl;
 import arc.oop.dao.chamber.interfaces.IDaoChamber;
+import arc.oop.dao.spa.impls.DaoSpaImpl;
+import arc.oop.dao.spa.interfaces.IDaoSpa;
 import arc.oop.model.BillsManager;
 import arc.oop.model.chamber.Chamber;
+import arc.oop.model.spa.Spa;
 import arc.oop.service.chamber.interfaces.IChamberService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -58,21 +61,36 @@ public class Main {
 //        System.out.println("----");
 //        chamberImpls.showAll();
 
-        IChamberService daoChamber = (IChamberService) mySpringContext.getBean("dao_ch");
-        daoChamber.showAll();
-        Chamber chamber02 = daoChamber.getChamber(1);
-        chamber02.setId(8);
-        daoChamber.updateChamber(chamber02);
-        System.out.println("----------------------");
-        daoChamber.showAll();
-        System.out.println("----------------------");
-        daoChamber.deleteChamber(2);
-        System.out.println("----------------------");
-        daoChamber.showAll();
-        ApplicationContext mySpringContextToo = new ClassPathXmlApplicationContext("dao-bill-context.xml");
+//        IChamberService daoChamber = (IChamberService) mySpringContext.getBean("dao_ch");
+//        daoChamber.showAll();
+//        Chamber chamber02 = daoChamber.getChamber(1);
+//        chamber02.setId(8);
+//        daoChamber.updateChamber(chamber02);
+//        System.out.println("----------------------");
+//        daoChamber.showAll();
+//        System.out.println("----------------------");
+//        daoChamber.deleteChamber(2);
+//        System.out.println("----------------------");
+//        daoChamber.showAll();
+//        ApplicationContext mySpringContextToo = new ClassPathXmlApplicationContext("dao-bill-context.xml");
+//
+//        IDaoBill daoBill = (DaoBillImpl) mySpringContextToot.getBean("dao_bill");
+//        daoBill.showAll();
+//
 
-        IDaoBill daoBill = (DaoBillImpl) mySpringContextToo.getBean("dao_bill");
-        daoBill.showAll();
+        ApplicationContext mySpringContextToot = new ClassPathXmlApplicationContext("dao-spa-context.xml");
+
+        IDaoSpa spa = (DaoSpaImpl) mySpringContextToot.getBean("dao_spa");
+
+        spa.showAll();
+        Spa leviy = spa.getSpa(1);
+        leviy.setId(7);
+        System.out.println(
+                leviy.toString());
+//        spa.getAll();
+        System.out.println("-----");
+        spa.createSpa(leviy);
+        spa.showAll();
 
 
 

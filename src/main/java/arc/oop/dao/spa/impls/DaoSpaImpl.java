@@ -1,6 +1,6 @@
 package arc.oop.dao.spa.impls;
 
-import arc.oop.dao.spa.interfaces.ISpaChamber;
+import arc.oop.dao.spa.interfaces.IDaoSpa;
 import arc.oop.model.spa.Spa;
 
 import java.util.ArrayList;
@@ -9,10 +9,18 @@ import java.util.List;
 /**
  * Created by initium on 24.03.17.
  */
-public class DaoSpaImpl implements ISpaChamber {
+public class DaoSpaImpl implements IDaoSpa {
 
 
-    public List<Spa> spaes = new ArrayList<Spa>();
+    public List<Spa> spaes = new ArrayList<>();
+
+    public DaoSpaImpl(List<Spa> spaes) {
+        this.spaes = spaes;
+    }
+
+    public DaoSpaImpl() {
+
+    }
 
     public List<Spa> getAll() {
         return null;
@@ -33,7 +41,7 @@ public class DaoSpaImpl implements ISpaChamber {
     }
 
     public void createSpa(Spa spa) {
-
+        spaes.add(spa);
     }
 
     public void updateSpa(Spa spa) {
