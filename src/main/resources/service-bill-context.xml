@@ -3,11 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <import resource="dao-spa-context.xml" />
 
-    <bean id="services_rest" class="arc.oop.service.spa.impls.SpaServiceImpl">
+    <import resource="dao-bill-context.xml" />
+
+    <bean id="service_bill" class="arc.oop.service.bill.impls.BillServiceImpl">
         <constructor-arg>
-            <ref bean="dao_spa"></ref>
+            <ref bean="dao_bill"></ref>
         </constructor-arg>
     </bean>
+
 </beans>

@@ -4,9 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-       <import resource="services-bill-context.xml"/>
-       <import resource="services-chamber-context.xml"/>
-       <import resource="services-restorant-context.xml"/>
-       <import resource="services-spa-context.xml"/>
+       <import resource="service-bill-context.xml"/>
+       <import resource="service-chamber-context.xml"/>
+       <import resource="service-restorant-context.xml"/>
+       <import resource="service-spa-context.xml"/>
 
 </beans>
