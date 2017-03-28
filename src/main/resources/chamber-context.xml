@@ -44,5 +44,13 @@
         <property name="jacusi" value="true" />
     </bean>
 
+    <bean id="ch_06" class="arc.oop.model.chamber.Chamber">
+        <property name="id" value="6" />
+        <property name="bar" value="false"/>
+        <property name="conditioner" value="true"/>
+        <property name="fridge" value="true"/>
+        <property name="jacusi" value="false"/>
+    </bean>
+
 
 </beans>

@@ -17,4 +17,12 @@
             </list>
         </constructor-arg>
     </bean>
+
+    <bean id="dao_ch2" class="arc.oop.dao.chamber.impls.DaoChamberImpl">
+        <constructor-arg>
+            <list>
+                <ref bean="ch_06"/>
+            </list>
+        </constructor-arg>
+    </bean>
 </beans>

@@ -34,23 +34,22 @@ public class ChamberServiceImpl implements IChamberService {
     }
 
     public Chamber getChamber(int id) {
-        return null;
+        return daoChamber.getChamber(id);
     }
 
     public void createChamber(Chamber chamber) {
-
-    }
+        daoChamber.createChamber(chamber);   }
 
     public void updateChamber(Chamber chamber) {
-
+        daoChamber.updateChamber(chamber);
     }
 
     public void deleteChamber(int id) {
-
+        daoChamber.deleteChamber(id);
     }
 
     public void showAll() {
-
+        daoChamber.showAll();
     }
 
     public int getAmountOfAllBills() {

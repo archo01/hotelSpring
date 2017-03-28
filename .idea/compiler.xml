@@ -9,7 +9,7 @@
         <module name="hotelSpring" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="hotelSpring" target="1.7" />
     </bytecodeTargetLevel>
   </component>
