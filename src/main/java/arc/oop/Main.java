@@ -24,11 +24,15 @@ public class Main {
         ApplicationContext
                 mySpringContext = new
                 ClassPathXmlApplicationContext("spring-context.xml");
-
-        Chamber chamber01 = (Chamber) mySpringContext.getBean("ch_01");
-
+//  get beans
         IBillService billsMananger = (BillServiceImpl) mySpringContext.getBean("service_bill");
+
+
+//  start testing
+
         billsMananger.showAll();
+
+
 
 
     }

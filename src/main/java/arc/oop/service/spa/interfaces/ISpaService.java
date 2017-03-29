@@ -14,4 +14,8 @@ public interface ISpaService {
     void updateSpa(Spa spa);
     void deleteSpa(int id);
     void showAll();
+
+
+//    bisiness logic
+
 }
