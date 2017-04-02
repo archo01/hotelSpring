@@ -16,4 +16,5 @@ public interface IChamberService {
     void showAll();
 
     int getAmountOfAllBills();
+    int getPriceById(int id);
 }

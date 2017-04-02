@@ -10,6 +10,7 @@ public class Chamber {
     boolean conditioner;
     boolean jacusi;
 
+
     public Chamber(int id, boolean fridge, boolean bar, boolean conditioner, boolean jacusi) {
         this.id = id;
         this.fridge = fridge;

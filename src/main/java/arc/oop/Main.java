@@ -8,7 +8,7 @@ import arc.oop.model.chamber.Chamber;
 import arc.oop.model.spa.Spa;
 import arc.oop.service.bill.impls.BillServiceImpl;
 import arc.oop.service.bill.interfaces.IBillService;
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

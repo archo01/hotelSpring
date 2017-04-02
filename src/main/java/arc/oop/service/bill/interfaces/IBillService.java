@@ -16,4 +16,8 @@ public interface IBillService {
     void deleteBill(int id);
     void showAll();
 
+    int getPriceById(int id);
+    int getLastMaxBillSum();
+    void showLastTopClient();
+
 }

@@ -55,4 +55,25 @@ public class ChamberServiceImpl implements IChamberService {
     public int getAmountOfAllBills() {
         return daoChamber.getAll().size();
     }
+
+    @Override
+    public int getPriceById(int id) {
+        int price = 250;
+        Chamber room = daoChamber.getChamber(id);
+            if (room.isBar()){
+                price += 150;
+            }
+            if (room.isConditioner()){
+                price += 80;
+            }
+            if (room.isFridge()){
+                price += 60;
+            }
+            if (room.isJacusi()){
+                price += 200;
+            }
+        return price;
+    }
+
+
 }
