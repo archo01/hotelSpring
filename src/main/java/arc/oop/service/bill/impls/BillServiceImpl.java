@@ -7,12 +7,14 @@ import arc.oop.service.bill.interfaces.IBillService;
 import arc.oop.service.chamber.interfaces.IChamberService;
 import arc.oop.service.restoraunt.interfaces.IRestorauntService;
 import arc.oop.service.spa.interfaces.ISpaService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by initium on 28.03.17.
  */
+@Service
 public class BillServiceImpl implements IBillService{
     IDaoBill daoBill;
 

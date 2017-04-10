@@ -3,12 +3,15 @@ package arc.oop.service.chamber.impls;
 import arc.oop.dao.chamber.interfaces.IDaoChamber;
 import arc.oop.model.chamber.Chamber;
 import arc.oop.service.chamber.interfaces.IChamberService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by initium on 24.03.17.
  */
+
+@Service
 public class ChamberServiceImpl implements IChamberService {
     IDaoChamber daoChamber;
 

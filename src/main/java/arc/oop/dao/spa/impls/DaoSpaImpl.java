@@ -23,7 +23,7 @@ public class DaoSpaImpl implements IDaoSpa {
     }
 
     public List<Spa> getAll() {
-        return null;
+        return spaes;
     }
 
     public Spa getSpa(int id) {

@@ -3,12 +3,15 @@ package arc.oop.service.restoraunt.impls;
 import arc.oop.dao.restoraunt.interfaces.IDaoRestaurant;
 import arc.oop.model.restorant.Restaurant;
 import arc.oop.service.restoraunt.interfaces.IRestorauntService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by initium on 26.03.17.
  */
+
+@Service
 public class RestorauntServiceImpl implements IRestorauntService {
 
     IDaoRestaurant daoRestaurant;

@@ -3,15 +3,20 @@ package arc.oop.service.spa.impls;
 import arc.oop.dao.spa.interfaces.IDaoSpa;
 import arc.oop.model.spa.Spa;
 import arc.oop.service.spa.interfaces.ISpaService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by initium on 28.03.17.
  */
+
+@Service
 public class SpaServiceImpl implements ISpaService {
 
     IDaoSpa daoSpa;
+
+
 
     public IDaoSpa getDaoSpa() {
         return daoSpa;
