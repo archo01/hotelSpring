@@ -4,9 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-        <import resource="restorant-context.xml"/>
+        <import resource="restaurant-context.xml"/>
 
-        <bean id="dao_rest" class="arc.oop.dao.restoraunt.impls.DaoRestaurantImpl">
+        <bean id="dao_rest" class="arc.oop.dao.restaurant.impls.DaoRestaurantImpl">
             <constructor-arg>
                 <list>
                     <ref bean="lanc_01"/>

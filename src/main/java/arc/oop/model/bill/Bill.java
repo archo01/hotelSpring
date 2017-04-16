@@ -1,7 +1,7 @@
 package arc.oop.model.bill;
 
 import arc.oop.model.chamber.Chamber;
-import arc.oop.model.restorant.Restaurant;
+import arc.oop.model.restaurant.Restaurant;
 import arc.oop.model.spa.Spa;
 
 /**
@@ -54,7 +54,7 @@ public class Bill {
         return "Bill{" +
                 "id=\n" + id +
                 ", chamber=\n" + chamber.toString()  +
-                ", restorant=\n" + restorant.toString() +
+                ", restaurant=\n" + restorant.toString() +
                 ", spa=\n" + spa.toString() +
                 '}';
     }

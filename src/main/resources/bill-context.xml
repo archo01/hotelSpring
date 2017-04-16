@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <import resource="chamber-context.xml" />
-    <import resource="restorant-context.xml" />
+    <import resource="restaurant-context.xml" />
     <import resource="spa-context.xml" />
 
         <bean id="check_01" class="arc.oop.model.bill.Bill">

@@ -3,8 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <import resource="dao-restorant-context.xml" />
-    <bean id="service_rest" class="arc.oop.service.restoraunt.impls.RestorauntServiceImpl">
+    <import resource="dao-restaurant-context.xml" />
+    <bean id="service_rest" class="arc.oop.service.restaurant.impls.RestaurantServiceImpl">
         <constructor-arg>
             <ref bean="dao_rest"></ref>
         </constructor-arg>

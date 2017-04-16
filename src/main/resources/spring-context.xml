@@ -6,7 +6,7 @@
 
        <import resource="service-bill-context.xml"/>
        <import resource="service-chamber-context.xml"/>
-       <import resource="service-restorant-context.xml"/>
+       <import resource="service-restaurant-context.xml"/>
        <import resource="service-spa-context.xml"/>
 
 </beans>

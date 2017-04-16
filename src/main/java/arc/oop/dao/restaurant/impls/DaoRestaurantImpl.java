@@ -1,7 +1,7 @@
-package arc.oop.dao.restoraunt.impls;
+package arc.oop.dao.restaurant.impls;
 
-import arc.oop.dao.restoraunt.interfaces.IDaoRestaurant;
-import arc.oop.model.restorant.Restaurant;
+import arc.oop.dao.restaurant.interfaces.IDaoRestaurant;
+import arc.oop.model.restaurant.Restaurant;
 
 import java.util.ArrayList;
 import java.util.List;

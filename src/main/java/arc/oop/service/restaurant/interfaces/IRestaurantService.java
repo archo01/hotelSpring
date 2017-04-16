@@ -1,13 +1,13 @@
-package arc.oop.service.restoraunt.interfaces;
+package arc.oop.service.restaurant.interfaces;
 
-import arc.oop.model.restorant.Restaurant;
+import arc.oop.model.restaurant.Restaurant;
 
 import java.util.List;
 
 /**
  * Created by initium on 26.03.17.
  */
-public interface IRestorauntService {
+public interface IRestaurantService {
     List<Restaurant> getAll();
     Restaurant getRestaurant(int id);
     void createRestaurant(Restaurant restaurant);

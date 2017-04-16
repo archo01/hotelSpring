@@ -2,9 +2,6 @@ package arc.oop.dao.bill.impl;
 
 import arc.oop.dao.bill.interfaces.IDaoBill;
 import arc.oop.model.bill.Bill;
-import arc.oop.model.chamber.Chamber;
-import arc.oop.model.restorant.Restaurant;
-import arc.oop.model.spa.Spa;
 
 import java.util.ArrayList;
 import java.util.List;

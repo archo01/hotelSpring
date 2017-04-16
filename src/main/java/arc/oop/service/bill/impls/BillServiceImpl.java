@@ -4,9 +4,6 @@ import arc.oop.dao.bill.interfaces.IDaoBill;
 import arc.oop.model.bill.Bill;
 import arc.oop.model.chamber.Chamber;
 import arc.oop.service.bill.interfaces.IBillService;
-import arc.oop.service.chamber.interfaces.IChamberService;
-import arc.oop.service.restoraunt.interfaces.IRestorauntService;
-import arc.oop.service.spa.interfaces.ISpaService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

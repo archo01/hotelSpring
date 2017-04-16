@@ -1,8 +1,8 @@
-package arc.oop.service.restoraunt.impls;
+package arc.oop.service.restaurant.impls;
 
-import arc.oop.dao.restoraunt.interfaces.IDaoRestaurant;
-import arc.oop.model.restorant.Restaurant;
-import arc.oop.service.restoraunt.interfaces.IRestorauntService;
+import arc.oop.dao.restaurant.interfaces.IDaoRestaurant;
+import arc.oop.model.restaurant.Restaurant;
+import arc.oop.service.restaurant.interfaces.IRestaurantService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +12,7 @@ import java.util.List;
  */
 
 @Service
-public class RestorauntServiceImpl implements IRestorauntService {
+public class RestaurantServiceImpl implements IRestaurantService {
 
     IDaoRestaurant daoRestaurant;
 
@@ -24,11 +24,11 @@ public class RestorauntServiceImpl implements IRestorauntService {
         this.daoRestaurant = daoRestaurant;
     }
 
-    public RestorauntServiceImpl() {
+    public RestaurantServiceImpl() {
 
     }
 
-    public RestorauntServiceImpl(IDaoRestaurant daoRestaurant) {
+    public RestaurantServiceImpl(IDaoRestaurant daoRestaurant) {
 
         this.daoRestaurant = daoRestaurant;
     }

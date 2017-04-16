@@ -1,4 +1,4 @@
-package arc.oop.model.restorant;
+package arc.oop.model.restaurant;
 
 /**
  * Created by initium on 20.03.17.

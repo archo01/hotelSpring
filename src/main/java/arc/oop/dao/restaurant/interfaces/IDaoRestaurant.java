@@ -1,7 +1,6 @@
-package arc.oop.dao.restoraunt.interfaces;
+package arc.oop.dao.restaurant.interfaces;
 
-import arc.oop.model.chamber.Chamber;
-import arc.oop.model.restorant.Restaurant;
+import arc.oop.model.restaurant.Restaurant;
 
 import java.util.List;
 
